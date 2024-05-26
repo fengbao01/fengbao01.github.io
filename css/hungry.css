@@ -98,7 +98,7 @@ a{
 .black{
     color: black; /* 黑色 */
 }
-@media (max-width:400px){
+@media (max-width:600px){
     .white{
         color: rgba(0, 0, 0, 0);
     }
