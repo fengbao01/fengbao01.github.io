@@ -1,0 +1,223 @@
+body{
+    background-image: url(../images/uuz.png); /* 设置网页背景图片 */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.div-flex{
+    display: flex;
+}
+.div-white{ /* 白色盒子 */
+    width: 500px; /* 边框宽度 */
+    height: 500px; /* 边框长度 */
+    background: rgba(255, 255, 255, 0.2); /* 设置框白色透明 */
+    margin: 400 auto; /* 自动居中 */
+    border-radius: 15px; /* 圆角 */
+}
+.div-black-a{ /* 黑色盒子 */
+    width: 300px; /* 边框宽度 */
+    height: 800px; /* 边框长度 */
+    background: rgba(0, 0, 0, 0.2); /* 设置框白色透明 */
+    margin: 100px 70% 0; /* 自动居中 */
+    border-radius: 5px; /* 圆角 */
+    position: absolute;
+}
+.div-black-b{
+    width: 600px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 100 440;
+    transform-style: preserve-3d;
+    transition: .5s;
+}
+.div-black-b:hover{
+    transform: perspective(500px) rotate(0) scale(1.1);
+}
+.div-black-b-2{
+    width: 800px;
+    height: 1100px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 100 auto;
+}
+.div-black-c{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: fixed;
+    top: 0;
+}
+.div-black-d{
+    width: 600px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 310 -1100;
+    transform-style: preserve-3d;
+    transition: .5s;
+}
+.div-black-d:hover{
+    transform: perspective(500px) rotate(0) scale(1.1);
+}
+.div-black-e{
+    width: 600px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 520 560;
+    transform-style: preserve-3d;
+    transition: .5s;
+}
+.div-black-e:hover{
+    transform: perspective(500px) rotate(0) scale(1.1);
+}
+.div-air{
+    width: 600px;
+    height: 200px;
+    margin-top: -20px;
+    border-radius: 5px;
+}
+.div-circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+}
+.div-doc-image-left{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    float: left;
+}
+.div-doc-image-right{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    float: right;
+}
+.div-exit{
+    width: 95px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 190px;
+    margin-left: 50px;
+}
+.h1-margin-auto{
+    margin: 100 auto 0;
+    color: white; /* 白色 */
+    font-size: 45;
+    text-align: center;
+}
+.img-auto-a{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img-auto-b{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.img-auto-b-2{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.img-s{
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+.white{
+    color: white; /* 白色 */
+    font-size: 20;
+    text-align: center;
+}
+.white-s{
+    color: white; /* 白色 */
+    font-size: 10;
+    text-align: center;
+}
+.white-doc{
+    color: white; /* 白色 */
+    font-size: 20;
+    text-align: center;
+}
+.white-BIG{
+    color: white;
+    font-size: 30;
+    margin-left: 340px;
+}
+.black{
+    color: black; /* 黑色 */
+}
+.photo-wall{
+    margin-top: 270px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0001);
+}
+.photo-wall .photo-wall-box{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    transition: .5s;
+}
+.photo-wall .photo-wall-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.photo-wall:hover > :not(:hover){
+    margin: 0 -20px;
+    filter: drop-shadow(0 0 25px #000)
+            drop-shadow(0 0 45px #000);
+    transform: perspective(500px) rotateY(45deg) scale(0.95);
+}
+.photo-wall .photo-wall-box:hover ~ .photo-wall-box{
+    transform: perspective(500px) rotateY(-45deg) scale(0.95);
+}
+.photo-wall .photo-wall-box:hover{
+    transform: perspective(500px) rotateY(0) scale(1.5);
+}
+@media (max-width:400px){
+    .white{
+        color: rgba(0, 0, 0, 0);
+    }
+    .white-s{
+        color: rgba(0, 0, 0, 0);
+    }
+    .div-black-a{
+        width: 0;
+        height: 0;
+    }
+    .img-auto-a{
+        width: 0;
+        height: 0;
+    }
+}
